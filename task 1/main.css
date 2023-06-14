@@ -1,0 +1,191 @@
+.nav {
+  background-color: rgb(66, 65, 65);
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 5px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: right;
+  justify-content: space-between;
+  line-height: 0.2;
+  color: white;
+  padding-top: 10px;
+}
+
+.intro h3 {
+  color: white;
+}
+
+.container .input1 {
+  background-color: #181717;
+  color: white
+}
+
+.container .input2 {
+  background-color: orange;
+  color: white;
+}
+
+.sec ul {
+  display: flex;
+  background-color: #181717;
+  color: white;
+  list-style: none;
+  padding: 10px;
+  justify-content: start;
+}
+
+.sec ul li {
+  margin-right: 30px;
+  padding-bottom: 10px;
+}
+
+.size {
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+}
+
+.box-size1 {
+  background-color: rgb(66, 65, 65);
+  color: white;
+  height: 300px;
+  width: 300px;
+  padding-left: 10px;
+}
+
+.box-size1 h1 {
+  color: rgb(220, 214, 214);
+  font-size: 35px;
+}
+
+.box-size2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(24, 22, 22);
+  color: white;
+  height: 300px;
+  width: 1100px;
+
+}
+
+.content {
+  display: flex;
+}
+
+.para {
+  width: 50%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.para span {
+  color: orange;
+  font-weight: bold;
+}
+
+.box {
+  padding-top: 50px;
+  display: flex;
+}
+
+.box-size3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(24, 22, 22);
+  color: white;
+  border: 5px outset rgb(255, 255, 255);
+  height: 130px;
+  width: 130px;
+}
+
+.box-size4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(24, 22, 22);
+  color: white;
+  border: 5px outset rgb(255, 255, 255);
+  height: 130px;
+  width: 130px;
+}
+
+.box-size5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(24, 22, 22);
+  color: white;
+  border: 5px outset rgb(255, 255, 255);
+  height: 130px;
+  width: 130px;
+
+}
+
+.size2 {
+  margin-right: 100px;
+}
+
+.size1 {
+  
+  margin-right: 10px;
+}
+
+.content h2 {
+  color: rgb(116, 115, 115);
+
+}
+
+.end h2,
+h3 {
+  color: rgb(116, 115, 115);
+}
+
+.end span {
+  color: orange;
+  font-weight: bold;
+}
+
+.block1 {
+  width: 25%
+}
+
+.block2 {
+  width: 25%
+}
+
+.block3 {
+  width: 50%;
+}
+
+.end {
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.block2 ul li {
+  color: orange
+}
+
+.box-size6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(24, 22, 22);
+  color: white;
+  border: 5px outset rgb(255, 255, 255);
+  height: 130px;
+  margin-left: 10px;
+  margin-right: 20px;
+  width: 130px;
+}
+
+.blog {
+  width: 400px;
+}

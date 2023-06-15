@@ -1,0 +1,143 @@
+body {
+    background: blueviolet;
+    background-image: url(https://images.pexels.com/photos/3109850/pexels-photo-3109850.jpeg?cs=srgb&dl=pexels-anni-roenkae-3109850.jpg&fm=jpg);
+    padding: 10px 80px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 30px;
+}
+
+.firstPage {
+    background-color: violet;
+    background-image: url(https://img.freepik.com/free-photo/gradient-iphone-wallpaper-oil-bubble-water-background_53876-176849.jpg?size=1926&ext=jpg);
+    height: 650px;
+    width: 100%;
+    color: #ffffff;
+}
+
+.logo h3 {
+    margin: 15px 30px;
+}
+
+.Welcome_page h2 {
+    font-family: monospace;
+    display: flex;
+    height: 200px;
+    font-size: 40px;
+    justify-content: center;
+    align-items: end;
+}
+
+.sign_in {
+    height: 300px;
+}
+
+.sign_in p {
+    font-size: 15px;
+    display: flex;
+    padding-left: 30px;
+    width: 70%;
+    justify-content: end;
+}
+
+.google p {
+    margin-left: 15px;
+}
+
+
+.secondpage {
+    background-color: aliceblue;
+    height: 650px;
+    width: 100%;
+}
+
+.sign h2 {
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 0%;
+}
+
+.inputBox input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 90%;
+    border-bottom: 3px solid pink;
+    font-size: 15px;
+    margin: 20px 20px;
+}
+
+.button1 {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 20px;
+    background-color: rgb(206, 132, 206);
+    width: 90%;
+}
+
+.button2 {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: start;
+    font-size: 16px;
+    margin: 4px 20px;
+    background-color: rgb(40, 190, 240);
+    width: 90%;
+}
+
+.button3 {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: start;
+    font-size: 16px;
+    margin: 15px 20px;
+    background-color: rgb(77, 77, 145);
+    width: 90%;
+}
+
+.para {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.para span {
+    color: blue;
+    font-weight: bold;
+}
+
+@media screen and (max-width:750px) {
+    .container {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 10px;
+
+    }
+
+    .firstPage {
+        height: 400px;
+        width: 100%;
+    }
+
+    .Welcome_page h2 {
+        height: 100px;
+    }
+
+    .sign_in {
+        height: 150px
+    }
+
+    .secondpage {
+        height: 500px;
+        width: 100%;
+    }
+}

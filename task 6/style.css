@@ -24,6 +24,11 @@ header {
 .home ul {
   display: flex;
   list-style: none;
+  cursor: pointer !important;
+}
+
+.home ul :hover {
+  color: coral;
 }
 
 .home ul li {
@@ -33,6 +38,18 @@ header {
 
 .home ul li:nth-child(1) {
   color: #b99b5f;
+}
+
+.menu-item {
+  height: 3px;
+  width: 20px;
+  background-color: black;
+  margin-bottom: 3px;
+
+}
+
+.menu {
+  display: none;
 }
 
 .image {
@@ -110,8 +127,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(17, 17, 87);
-  padding-left: 200px;
-  padding-right: 200px;
+  padding: 20px 200px;
 
 }
 
@@ -119,24 +135,23 @@ header {
   color: #b99b5f;
   font-size: 80px;
   font-weight: 900;
-
 }
 
 .Symbols p {
   color: #b99b5f;
-  font-size: 15px;
+  font-size: 30px;
+  line-height: 1;
 }
 
 .Symbols h2 {
-  margin: 0%;
+
   color: #fff;
-  font-size: 35px;
-  padding-top: 40px;
+  font-size: 25px;
   padding-left: 15px;
 }
 
 .para {
-  line-height: 0.5;
+  line-height:0;
   margin-left: 20px;
 }
 
@@ -146,8 +161,7 @@ header {
 }
 
 .parent {
-  padding-left: 200px;
-  padding-right: 200px;
+  padding: 10px 200px;
 }
 
 .child {
@@ -234,10 +248,11 @@ header {
   font-style: bold;
 }
 
-.logo span {
-  font-size: 40px;
-  font-weight: 60;
+.ipsum span.material-symbols-outlined{
+  font-size: 50px;
+  font-weight: 600;
   color: white;
+
 }
 
 .ipsum {
@@ -275,11 +290,19 @@ header {
   color: #fff;
   font-size: 20px;
 }
+.advise h1{
+  color: #b99b5f;
+}
 
 .advise span {
   color: #b99b5f;
   font-weight: 700;
 }
+.advise span.material-symbols-outlined {
+  font-size: 30px;
+  vertical-align: middle;
+}
+
 
 .parent {
   text-align: center;
@@ -361,6 +384,14 @@ header {
   display: block;
   width: 20%
 }
+.lawyer span {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #b99b5f;
+}
+.lawyer li{
+  list-style: none;
+}
 
 .consult h2 {
   color: #b99b5f;
@@ -368,21 +399,41 @@ header {
 }
 
 @media only screen and (max-width:500px) {
-
   .intro {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 10px 10px;
+    padding: 10px 0px;
+    font-size: 15px;
+    margin-left: 20px;
   }
 
   .Lawe h3 {
     color: #b99b5f;
+    font-size: 20px;
   }
 
   .home {
-    display: none;
+    display: block;
+    flex-direction: column;
 
   }
+
+  .home ul {
+    display: block;
+    text-align: center;
+    padding: 0%;
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 450px;
+    top: 20px;
+  }
+
 
   .image {
     background-image: url(https://static.vecteezy.com/system/resources/previews/013/424/649/large_2x/the-statue-of-justice-lady-justice-or-justitia-the-roman-goddess-of-justice-statue-on-black-wooden-wall-concept-of-judicial-trial-courtroom-process-and-lawyers-work-photo.JPG);
@@ -392,7 +443,6 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     color: white;
-    position: relative;
   }
 
   .image h1 {
@@ -409,7 +459,8 @@ header {
     background-color: #b99b5f;
     color: white;
     border: none;
-    height: 30px;
+    height: 20px;
+    margin-bottom: 50px;
   }
 
   .sub-nav {
@@ -417,10 +468,10 @@ header {
     justify-content: space-around;
     background-image: url(https://static.vecteezy.com/system/resources/previews/013/424/649/large_2x/the-statue-of-justice-lady-justice-or-justitia-the-roman-goddess-of-justice-statue-on-black-wooden-wall-concept-of-judicial-trial-courtroom-process-and-lawyers-work-photo.JPG);
     width: 70%;
-    height: 80px;
+    height: 70px;
     margin-left: 0px;
     padding-left: 0px;
-    line-height: 2;
+    line-height: 1;
     color: white;
     font-size: 10px;
     position: absolute;
@@ -431,72 +482,66 @@ header {
 
   .sub-nav h3 {
     color: #b99b5f;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .sub-nav button {
-    margin-right: 10px;
-    margin-top: 20px;
+    margin-right: 20px;
+    margin-top: 25x;
   }
 
   .promise {
     display: block;
     margin-top: 50px;
     margin-right: 0px;
-    margin-left: 0px;
-    position: relative;
+    margin-left: 10px;
   }
 
   .promise h4 {
     color: #b99b5f;
-    z-index: 1;
   }
 
   .promise img {
     height: 200px;
-    position: absolute;
-    z-index: -10;
-    right: 0%;
-
+    width: 50%;
+    margin-right: 100px;
+    margin-left: 100px;
   }
 
   .Symbols {
-    height: 150px;
+    height: 90px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: rgb(17, 17, 87);
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0%;
+    padding-right: 0%;
   }
 
   .Symbols span {
     color: #b99b5f;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 300;
-
+    padding: 0%;
+    margin: 0%;
   }
-
   .Symbols p {
-    color: #b99b5f;
+    color: white;
     font-size: 15px;
+    padding: 0%;
+    margin: 0%;
+    margin-top: 10px;
   }
 
   .Symbols h2 {
-    margin: 0%;
-    color: #fff;
-    font-size: 20px;
-    padding-top: 20px;
-    padding-left: 5px;
+    display: none;
   }
 
   .para {
-    line-height: 1;
-    margin-left: 10px;
+    line-height: 0.8;
+    margin-left: 5px;
   }
 
   .icon {
-    display: flex;
+    display:flex;
     justify-content: space-between;
   }
 
@@ -537,22 +582,21 @@ header {
     padding: 20px;
   }
 
-  .fire h1 {
-    color: #fff !important;
-  }
+  
 
   .fire span {
     font-size: 40px;
     font-weight: 400;
   }
 
-  .fire:nth-child(2) {
+  .fire:nth-child(even) {
     background-color: #b99b5f;
   }
 
   .client {
-    display: flex;
-    padding: 0px;
+    display: block;
+    padding: 10px;
+    
   }
 
   .parent:nth-child(2) {
@@ -567,14 +611,14 @@ header {
 
   .client img {
     border-radius: 50%;
-    width: 100%;
-    height: 100px;
+    width: 50%;
+    height: 200px;
     background-color: #fff;
   }
 
   .business {
-    padding: 10px;
-    line-height: 1;
+    padding: 10px 10px;
+    line-height: 0;
   }
 
   .logo {
@@ -586,6 +630,7 @@ header {
     padding-left: 0px;
     padding-right: 0px;
     color: white;
+    margin: 0px;
   }
 
   .logo span {
@@ -599,7 +644,7 @@ header {
   }
 
   .photo {
-    display: flex;
+    display: block;
     width: 100%;
     justify-content: space-between;
     padding-left: 0px;
@@ -619,31 +664,42 @@ header {
   }
 
   .card {
-    line-height: 0.5;
+    line-height: 0.1;
     text-align: center;
   }
-
   .advise {
     background-color: rgb(17, 17, 87);
     text-align: center;
-    padding: 0px 0px;
-    margin-top: 0px;
+    padding: 20px;
+    margin-top: 30px;
     color: #fff;
-    font-size: 10px;
+    font-size: 15px;
   }
-
-  .advise span {
+  
+  .advise h1 {
     color: #b99b5f;
-    font-weight: 70;
-    font-size: 10px;
+    margin-top: 0;
+    font-size: 24px;
   }
-
+  
+  .advise p {
+    margin:5px;
+  }
+  
+  .advise span.material-symbols-outlined {
+    font-size: 20px;
+    vertical-align: middle;
+  }
+  
+  
+  
   .parent {
     text-align: center;
   }
 
   .parent h1 {
     color: rgb(17, 17, 87);
+    font-size: 20px;
   }
 
   .photo-card img {
@@ -658,8 +714,10 @@ header {
   }
 
   .pic img {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
+    padding-top:20px;
+    margin-left: 30px;
   }
 
   .pic {
@@ -671,6 +729,7 @@ header {
   .pic span {
     color: #b99b5f;
     font-size: 10px;
+    text-align: center;
   }
 
   .hrcolor {
@@ -688,33 +747,46 @@ header {
   }
 
   .lorem {
-    display: flex;
-    justify-content: space-around;
+    display: block;
+    text-align: center;
     background-color: rgb(17, 17, 87);
-    height: 50px;
+    height: 100px;
     line-height: 1;
     color: white;
+    font-size: 8px;
     padding: 10px 10px;
     margin-top: 20px;
   }
 
   .consult {
-    display: flex;
+    display: block;
     background-color: rgb(14, 14, 50);
-    height: 100px;
+    height: 600px;
     color: #fff;
-    font-size: 5px;
     padding: 10px 20px;
-    gap: 10%;
+    font-size: 15px;
+
   }
 
   .lawyer {
     display: block;
-    width: 15%
+    width: 100%;
   }
 
+  .lawyer li {
+    list-style: none;
+    /* padding-left: 0%; */
+  }
   .consult h2 {
     color: #b99b5f;
-    font-size: 10px;
+    font-size: 20px;
   }
+
+  .lawyer span.material-symbols-outlined {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #b99b5f;
+    vertical-align: middle;
+  }
+  
 }
